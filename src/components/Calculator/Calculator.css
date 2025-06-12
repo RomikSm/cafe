@@ -1,0 +1,84 @@
+.calculator-container {
+  padding: 64px 16px;
+  background-color: #f1f1f1;
+}
+
+.calculator-content {
+  max-width: 980px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.calculator-heading {
+  font-size: 24px;
+  margin: 10px 0;
+  font-weight: 400;
+}
+
+.calculator-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding: 4px 8px;
+  text-align: center;
+}
+
+.calculator {
+  width: 300px;
+  margin: 40px auto;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.calculator-display {
+  background-color: #333;
+  color: white;
+  text-align: right;
+  padding: 20px;
+  font-size: 24px;
+  font-family: monospace;
+  border-bottom: 1px solid #444;
+}
+
+.calculator-keypad {
+  padding: 10px;
+}
+
+.calculator-row {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.calculator-row:last-child {
+  margin-bottom: 0;
+}
+
+.calculator-row button {
+  flex: 1;
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  padding: 15px 0;
+  margin: 0 5px;
+  border-radius: 4px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.calculator-row button:hover {
+  background-color: #e9e9e9;
+}
+
+.calculator-row button:active {
+  background-color: #d9d9d9;
+}
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+  .calculator {
+    width: 100%;
+    max-width: 300px;
+  }
+}

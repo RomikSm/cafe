@@ -1,0 +1,48 @@
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 8px;
+  background-color: #000;
+}
+
+.header-col {
+  flex: 1;
+  text-align: center;
+  min-width: 25%;
+}
+
+.header-button {
+  display: block;
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #fff;
+  background-color: #000;
+  border: none;
+  cursor: pointer;
+  font-family: "Inconsolata", sans-serif;
+  font-size: 14px;
+}
+
+.header-button:hover {
+  background-color: #333;
+}
+
+/* Mobile-first approach - for small screens, stack the navigation */
+@media (max-width: 600px) {
+  .header-col {
+    flex-basis: 50%;
+  }
+}
+
+@media (max-width: 400px) {
+  .header-col {
+    flex-basis: 100%;
+  }
+}
